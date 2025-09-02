@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tigres de Corazón</title>
+    <!-- Incluye el CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Negro oscuro para el fondo */
+        }
+        .section-padding {
+            padding: 80px 24px;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Barra de Navegación -->
+    <header class="bg-gray-900 text-white fixed top-0 w-full z-10 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold text-yellow-400">
+                Tigres de Corazón
+            </div>
+            <div class="flex space-x-6">
+                <a href="#compromiso" class="hover:text-yellow-400 transition-colors duration-300">Compromiso</a>
+                <a href="#vision" class="hover:text-yellow-400 transition-colors duration-300">Visión</a>
+                <a href="#galeria" class="hover:text-yellow-400 transition-colors duration-300">Galería</a>
+                <a href="#sugerencias" class="hover:text-yellow-400 transition-colors duration-300">Sugerencias</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="pt-20">
+
+        <!-- Sección de Nuestro Compromiso -->
+        <section id="compromiso" class="section-padding bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-5xl font-extrabold text-yellow-400 mb-6">Nuestro Compromiso</h2>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Mi compromiso es trabajar incansablemente por nuestra comunidad, impulsando políticas que mejoren la vida de cada ciudadano.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Nos centraremos en la creación de empleo, el fortalecimiento de la educación y la mejora de la seguridad pública para construir un futuro más próspero y justo para todos.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Campa%C3%B1a" alt="" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Visión de Futuro -->
+        <section id="vision" class="section-padding bg-gray-950">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-5xl font-extrabold text-yellow-400 mb-6">Una Visión de Futuro</h2>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Visualizamos una sociedad donde el progreso y la equidad van de la mano. Un lugar donde la innovación florece, donde cada familia tiene oportunidades y donde la voz de cada persona es escuchada.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Juntos, podemos construir un futuro más brillante, lleno de esperanza y nuevas posibilidades.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Comunidad" alt="" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería -->
+        <section id="galeria" class="section-padding bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-extrabold text-yellow-400 text-center mb-12">Galería</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Ítem de Galería 1 -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Reunion" alt="" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-yellow-400 mb-2">Reunión Comunitaria</h3>
+                            <p class="text-sm text-gray-400">Escuchando las necesidades de nuestros vecinos.</p>
+                        </div>
+                    </div>
+                    <!-- Ítem de Galería 2 -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Voluntarios" alt="" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-yellow-400 mb-2">Equipo de Voluntarios</h3>
+                            <p class="text-sm text-gray-400">Nuestros héroes detrás de la campaña.</p>
+                        </div>
+                    </div>
+                    <!-- Ítem de Galería 3 -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Discurso" alt="" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-yellow-400 mb-2">Momento de Inspiración</h3>
+                            <p class="text-sm text-gray-400">Compartiendo nuestra visión en el escenario.</p>
+                        </div>
+                    </div>
+                    <!-- Ítem de Galería 4 -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Apoyo" alt="" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-yellow-400 mb-2">Apoyo de la Ciudadanía</h3>
+                            <p class="text-sm text-gray-400">El poder del pueblo detrás de nuestra causa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Sugerencias -->
+        <section id="sugerencias" class="section-padding bg-gray-950">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-extrabold text-yellow-400 text-center mb-12">Envía tus Sugerencias</h2>
+                <div class="flex justify-center">
+                    <form action="https://formspree.io/f/meolralk" method="POST" class="w-full max-w-lg bg-gray-800 p-8 rounded-xl shadow-2xl">
+                        <div class="mb-6">
+                            <label for="suggestion" class="block text-gray-400 text-sm font-bold mb-2">
+                                Tu Sugerencia
+                            </label>
+                            <textarea id="suggestion" name="sugerencia" rows="6" required class="shadow appearance-none border rounded-lg w-full py-2 px-3 bg-gray-700 text-gray-200 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500 transition-colors duration-300"></textarea>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition-colors duration-300 transform hover:scale-105">
+                                Enviar
+                            </button>
+                        </div>
+                        <p class="mt-4 text-xs text-center text-gray-500">
+                            (Tu sugerencia se enviará de forma segura y confidencial)
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-gray-950 py-8 text-center text-gray-400">
+        <p>&copy; 2025 Diego Zacarías. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
