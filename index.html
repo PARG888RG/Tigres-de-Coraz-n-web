@@ -17,24 +17,34 @@
         .section-padding {
             padding: 80px 24px;
         }
+        /* Estilo para ocultar la barra de desplazamiento en la barra de navegación */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+            scrollbar-width: none; /* Firefox */
+        }
     </style>
 </head>
 <body class="text-gray-200">
 
     <!-- Barra de Navegación -->
-<header class="bg-gray-900 text-white fixed top-0 w-full z-10 shadow-lg">
-    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div class="text-2xl font-bold text-yellow-400">
-            Tigres de Corazón
-        </div>
-        <div class="flex space-x-6 overflow-x-auto scrollbar-hide md:flex md:space-x-6">
-            <a href="#compromiso" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Compromiso</a>
-            <a href="#vision" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Visión</a>
-            <a href="#galeria" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Galería</a>
-            <a href="#sugerencias" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Sugerencias</a>
-        </div>
-    </nav>
-</header>
+    <header class="bg-gray-900 text-white fixed top-0 w-full z-10 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold text-yellow-400">
+                Tigres de Corazón
+            </div>
+            <!-- Contenedor de enlaces deslizable -->
+            <div class="flex space-x-6 overflow-x-auto scrollbar-hide md:flex md:space-x-6">
+                <a href="#compromiso" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Compromiso</a>
+                <a href="#vision" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Visión</a>
+                <a href="#galeria" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Galería</a>
+                <a href="#documentos" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Documentos</a>
+                <a href="#sugerencias" class="hover:text-yellow-400 transition-colors duration-300 flex-shrink-0">Sugerencias</a>
+            </div>
+        </nav>
+    </header>
 
     <!-- Contenido Principal -->
     <main class="pt-20">
@@ -53,7 +63,7 @@
                         </p>
                     </div>
                     <div class="md:w-1/2 flex justify-center">
-                        <img src="img/colegio3.jpg" alt="" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <img src="img/colegio3.jpg" alt="Imagen del Colegio Salesiano" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>
             </div>
@@ -68,11 +78,11 @@
                         <p class="text-lg leading-relaxed mb-4">
                             Representar con alegría, responsabilidad y corazón a todos los estudiantes, promoviendo la convivencia fraterna, la participación activa y el compromiso social. 
                         <p class="text-lg leading-relaxed">
-                            Como Tigres de Corazón, buscamos que cada joven se sienta parte de un proyecto que une, transforma y enorgullece a la familia salesiana.
+                            Como Tigres de Corazón, buscamos que cada joven se sienta parte de un proyecto que une, transforma y enorgullece a la familia salesiana.
                         </p>
                     </div>
                     <div class="md:w-1/2 flex justify-center">
-                        <img src="img/basquet.jpg" alt="" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <img src="img/basquet.jpg" alt="Imagen de un partido de baloncesto" class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
                     </div>
                 </div>
             </div>
@@ -85,7 +95,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Ítem de Galería 1 -->
                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
-                        <img src="img/misa.JPG" alt="" class="w-full h-48 object-cover">
+                        <img src="img/familia.jpg" alt="Imagen de la familia salesiana" class="w-full h-48 object-cover">
                         <div class="p-6 text-center">
                             <h3 class="text-xl font-bold text-yellow-400 mb-2">Familia</h3>
                             <p class="text-sm text-gray-400">El primer equipo en el que aprendemos a jugar la vida</p>
@@ -93,7 +103,7 @@
                     </div>
                     <!-- Ítem de Galería 2 -->
                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
-                        <img src="img/familia.jpg" alt="" class="w-full h-48 object-cover">
+                        <img src="img/misa.JPG" alt="Imagen de amistad" class="w-full h-48 object-cover">
                         <div class="p-6 text-center">
                             <h3 class="text-xl font-bold text-yellow-400 mb-2">Amistad</h3>
                             <p class="text-sm text-gray-400">El lazo que convierte desconocidos en hermanos.</p>
@@ -101,7 +111,7 @@
                     </div>
                     <!-- Ítem de Galería 3 -->
                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
-                        <img src="img/ajedrez.jpg" alt="" class="w-full h-48 object-cover">
+                        <img src="img/ajedrez.jpg" alt="Imagen de ajedrez" class="w-full h-48 object-cover">
                         <div class="p-6 text-center">
                             <h3 class="text-xl font-bold text-yellow-400 mb-2">Educación</h3>
                             <p class="text-sm text-gray-400">Cada jugada cuenta, cada rugido inspira</p>
@@ -109,7 +119,7 @@
                     </div>
                     <!-- Ítem de Galería 4 -->
                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500 hover:scale-105">
-                        <img src="img/rudy.jpg" alt="" class="w-full h-48 object-cover">
+                        <img src="img/rudy.jpg" alt="Imagen de apoyo a selecciones" class="w-full h-48 object-cover">
                         <div class="p-6 text-center">
                             <h3 class="text-xl font-bold text-yellow-400 mb-2">Apoyo a las selecciones</h3>
                             <p class="text-sm text-gray-400">Apoyo a las selecciones que nos Representan.</p>
@@ -119,8 +129,20 @@
             </div>
         </section>
 
+        <!-- Sección de Documentos -->
+        <section id="documentos" class="section-padding bg-gray-950">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-extrabold text-yellow-400 text-center mb-12">Documentos</h2>
+                <div class="w-full flex justify-center">
+                    <!-- Iframe para visualizar el documento PDF -->
+                    <iframe src="docs/PLAN DE GOBIERNO 2026.pdf" class="w-full max-w-4xl h-screen rounded-xl shadow-2xl" frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
         <!-- Sección de Sugerencias -->
-        <section id="sugerencias" class="section-padding bg-gray-950">
+        <section id="sugerencias" class="section-padding bg-gray-900">
             <div class="container mx-auto px-6">
                 <h2 class="text-5xl font-extrabold text-yellow-400 text-center mb-12">Envía tus Sugerencias</h2>
                 <div class="flex justify-center">
